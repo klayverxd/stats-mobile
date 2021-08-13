@@ -3,7 +3,7 @@ import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: '82%',
     height: 56,
     backgroundColor: theme.colors.primary,
     borderRadius: 10,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   title: {
     flex: 1,
     color: theme.colors.white,
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 'bold',
     textAlign: 'center',
   },

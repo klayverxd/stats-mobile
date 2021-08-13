@@ -1,15 +1,10 @@
 import React from 'react'
-import {
-  Text,
-  View,
-  Image,
-  StatusBar,
-  ImageBackground,
-  SafeAreaView,
-} from 'react-native'
+import { Text, View, Image, StatusBar, ImageBackground } from 'react-native'
 
 import IllustrationImg from '../../assets/illustration.png'
 import StatsImg from '../../assets/stats-white.png'
+import Icons from '../../assets/icons.png'
+
 import { ButtonIcon } from '../../components/ButtonIcon'
 
 import { styles } from './styles'
@@ -22,7 +17,6 @@ export function SignIn() {
         backgroundColor="transparent"
         translucent
       />
-
       <View style={styles.content}>
         <ImageBackground
           source={IllustrationImg}
@@ -49,7 +43,8 @@ export function SignIn() {
           </View>
         </ImageBackground>
         <View style={styles.footer}>
-          <ButtonIcon title="Entrar com o Strava" activeOpacity={0.7} />
+          <ButtonIcon title="Fazer login com o Strava" activeOpacity={0.6} />
+          <Image source={Icons} style={styles.icons} resizeMode="stretch" />
         </View>
       </View>
     </View>

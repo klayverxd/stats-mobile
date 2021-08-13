@@ -3,36 +3,30 @@ import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    // flexDirection: 'column',
-    // justifyContent: 'center',
-    // alignItems: 'center',
+    flex: 1,
     backgroundColor: theme.colors.background,
   },
-  imageBackground: {
-    flex: 18,
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-  },
   content: {
-    paddingVertical: 30,
-    height: '100%',
+    flex: 1,
+  },
+  imageBackground: {
+    flex: 15,
   },
   textContent: {
+    flex: 1,
     paddingHorizontal: 30,
+    paddingVertical: 30,
+    justifyContent: 'space-evenly',
   },
   statsImg: {
     width: 160,
     height: 40,
-    marginBottom: 30,
   },
   title: {
     color: theme.colors.white,
     textAlign: 'left',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
   },
   subtitle: {
     color: theme.colors.white,
@@ -40,9 +34,14 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
   },
   footer: {
-    flex: 6,
-    // height: 500,
-    backgroundColor: 'red',
-    padding: 40,
+    flex: 8,
+    backgroundColor: theme.colors.primary,
+    // marginBottom: 10,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  icons: {
+    width: '100%',
+    height: 33,
   },
 })
