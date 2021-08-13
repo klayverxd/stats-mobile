@@ -21,7 +21,6 @@ export function SignIn() {
         <ImageBackground
           source={IllustrationImg}
           style={styles.imageBackground}
-          // resizeMode="stretch"
         >
           <View style={styles.textContent}>
             <Image
