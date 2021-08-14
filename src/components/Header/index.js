@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
-import AuthContext from '../../contexts/auth'
+import React from 'react'
+
+import { useAuth } from '../../contexts/auth'
 
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 
@@ -9,7 +10,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { styles } from './styles'
 
 export function Header() {
-  const { signOut } = useContext(AuthContext)
+  const { signOut } = useAuth()
 
   function handleSignOut() {
     signOut()

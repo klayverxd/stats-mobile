@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
-import AuthContext from '../../contexts/auth'
+import React from 'react'
+
+import { useAuth } from '../../contexts/auth'
 
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 
@@ -8,9 +9,7 @@ import StravaImg from '../../assets/strava-white.png'
 import { styles } from './styles'
 
 export function ButtonIcon({ title, activeOpacity }) {
-  const { signed, signIn } = useContext(AuthContext)
-
-  console.log(signed)
+  const { signed, signIn } = useAuth()
 
   function handleSignIn() {
     signIn()

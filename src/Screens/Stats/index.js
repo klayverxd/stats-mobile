@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useAuth } from '../../contexts/auth'
+
 import { Image, ScrollView, Text, View } from 'react-native'
 
 import Cyclist from '../../assets/cycling.png'
@@ -8,6 +10,8 @@ import Cyclists from '../../assets/cyclists.png'
 import { styles } from './styles'
 
 export function Stats() {
+  const { user } = useAuth()
+
   return (
     <View style={styles.container}>
       <ScrollView style={styles.containerCards}>
