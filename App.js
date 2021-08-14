@@ -1,7 +1,16 @@
 import React from 'react'
-// import { SignIn } from './src/screens/SignIn'
-import { Home } from './src/screens/Home'
+import { NavigationContainer } from '@react-navigation/native'
+
+import { AuthProvider } from './src/contexts/auth'
+
+import Routes from './src/routes'
 
 export default function App() {
-  return <Home />
+  return (
+    <NavigationContainer>
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
+    </NavigationContainer>
+  )
 }
