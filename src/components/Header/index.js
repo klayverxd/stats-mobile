@@ -18,9 +18,8 @@ export function Header() {
         />
         <View style={styles.contentUserInfo}>
           <Text style={styles.userName}>Klayver Ximenes</Text>
-          <Text style={styles.userCity}>
-            <Feather name="map-pin" size={16} color="white" />
-            Coreaú
+          <Text style={styles.userLocation}>
+            <Feather name="map-pin" size={16} color="white" /> Coreaú, Ceará
           </Text>
         </View>
       </View>

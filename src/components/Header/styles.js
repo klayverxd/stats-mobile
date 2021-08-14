@@ -35,9 +35,9 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  userCity: {
+  userLocation: {
     color: theme.colors.white,
+    // marginLeft: 4,
     fontSize: 16,
-    fontWeight: 'bold',
   },
 })
