@@ -1,18 +1,15 @@
 import React from 'react'
-import { Image, ScrollView, StatusBar, Text, View } from 'react-native'
 
-import { Header } from '../../components/Header'
+import { Image, ScrollView, Text, View } from 'react-native'
 
 import Cyclist from '../../assets/cycling.png'
 import Cyclists from '../../assets/cyclists.png'
 
 import { styles } from './styles'
 
-export function Home() {
+export function Stats() {
   return (
     <View style={styles.container}>
-      <Header />
-
       <ScrollView style={styles.containerCards}>
         <View style={styles.containerCard}>
           <View style={styles.cardSection1}>
