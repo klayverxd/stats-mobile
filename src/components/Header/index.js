@@ -1,5 +1,7 @@
-import React from 'react'
-import { Image, Text, View } from 'react-native'
+import React, { useContext } from 'react'
+import AuthContext from '../../contexts/auth'
+
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 
 import { Feather } from '@expo/vector-icons'
 import { Ionicons } from '@expo/vector-icons'
@@ -7,6 +9,12 @@ import { Ionicons } from '@expo/vector-icons'
 import { styles } from './styles'
 
 export function Header() {
+  const { signOut } = useContext(AuthContext)
+
+  function handleSignOut() {
+    signOut()
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.userInfo}>
@@ -24,7 +32,9 @@ export function Header() {
         </View>
       </View>
       <View style={styles.exitIcon}>
-        <Ionicons name="exit-outline" size={28} color="white" />
+        <TouchableOpacity onPress={handleSignOut}>
+          <Ionicons name="exit-outline" size={28} color="white" />
+        </TouchableOpacity>
       </View>
     </View>
   )
