@@ -1,24 +1,26 @@
-import React from 'react'
-import { Alert, Image, Text, TouchableOpacity, View } from 'react-native'
+import React, { useContext } from 'react'
+import AuthContext from '../../contexts/auth'
+
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 
 import StravaImg from '../../assets/strava-white.png'
 
 import { styles } from './styles'
 
 export function ButtonIcon({ title, activeOpacity }) {
-  function submit() {
-    Alert.alert(
-      'CALMA MÁ!',
-      `Fiz essa parte ainda não 😥${`\n`}Bixo aperreado 🙄`,
-      [{ text: 'Tá tá' }]
-    )
+  const { signed, signIn } = useContext(AuthContext)
+
+  console.log(signed)
+
+  function handleSignIn() {
+    signIn()
   }
 
   return (
     <TouchableOpacity
       style={styles.container}
       activeOpacity={activeOpacity}
-      onPress={submit}
+      onPress={handleSignIn}
     >
       <View style={styles.iconWrapper}>
         <Image source={StravaImg} style={styles.icon} />
