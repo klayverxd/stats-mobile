@@ -4,13 +4,17 @@ import { theme } from '../../global/styles/theme'
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+
     backgroundColor: theme.colors.primary,
+
+    paddingVertical: 12,
+    paddingHorizontal: 16,
   },
+
   containerCards: {
     flex: 1,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
   },
+
   containerCard: {
     flexDirection: 'row',
     alignItems: 'center',

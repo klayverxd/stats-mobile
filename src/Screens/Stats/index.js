@@ -13,8 +13,8 @@ export function Stats() {
   const { user } = useAuth()
 
   return (
-    <View style={styles.container}>
-      <ScrollView style={styles.containerCards}>
+    <ScrollView style={styles.containerCards}>
+      <View style={styles.container}>
         <View style={styles.containerCard}>
           <View style={styles.cardSection1}>
             <Text style={styles.title}>Distância total</Text>
@@ -80,7 +80,7 @@ export function Stats() {
             <Text style={styles.description}>36,4 km/h</Text>
           </View>
         </View>
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   )
 }
