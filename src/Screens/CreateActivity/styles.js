@@ -68,4 +68,77 @@ export const styles = StyleSheet.create({
     width: '100%',
     fontSize: 16,
   },
+
+  inputNumber: {
+    // backgroundColor: 'blue',
+    color: theme.colors.white,
+
+    minWidth: 20,
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  unitOfMeasure: {
+    color: theme.colors.white,
+
+    fontSize: 16,
+  },
+
+  containerSelect: {
+    borderWidth: 2,
+    borderColor: theme.colors.white,
+    borderRadius: 24,
+
+    flexDirection: 'row',
+
+    minHeight: 64,
+    marginVertical: 12,
+
+    padding: 10,
+  },
+
+  contentSelect: {
+    color: theme.colors.white,
+
+    borderLeftWidth: 1,
+    borderColor: theme.colors.white,
+
+    width: '80%',
+  },
+
+  itemSelect: {
+    fontWeight: 'bold',
+  },
+
+  containerRadioInput: {
+    alignItems: 'center',
+
+    borderWidth: 2,
+    borderColor: theme.colors.white,
+    borderRadius: 24,
+
+    minHeight: 64,
+    marginVertical: 12,
+
+    padding: 10,
+  },
+  contentRadioInput: {
+    color: theme.colors.white,
+  },
+  containerInputButtom: {
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    borderWidth: 2,
+    borderColor: theme.colors.white,
+    borderRadius: 24,
+
+    minHeight: 64,
+    marginVertical: 12,
+
+    padding: 10,
+  },
+  textButton: {
+    color: theme.colors.white,
+    fontSize: 18,
+  },
 })
