@@ -5,12 +5,16 @@ import { AuthProvider } from './src/contexts/auth'
 
 import Routes from './src/routes'
 
+import { AppearanceProvider } from 'react-native-appearance'
+
 export default function App() {
   return (
-    <NavigationContainer>
-      <AuthProvider>
-        <Routes />
-      </AuthProvider>
-    </NavigationContainer>
+    <AppearanceProvider>
+      <NavigationContainer>
+        <AuthProvider>
+          <Routes />
+        </AuthProvider>
+      </NavigationContainer>
+    </AppearanceProvider>
   )
 }
