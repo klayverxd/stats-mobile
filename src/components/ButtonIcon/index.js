@@ -2,9 +2,9 @@ import React from 'react'
 
 import { useAuth } from '../../contexts/auth'
 
-import { Image, Text, TouchableOpacity, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 
-import StravaImg from '../../assets/strava-white.png'
+import StravaImg from '../../assets/strava-white.svg'
 
 import { styles } from './styles'
 
@@ -22,7 +22,7 @@ export function ButtonIcon({ title, activeOpacity }) {
       onPress={handleSignIn}
     >
       <View style={styles.iconWrapper}>
-        <Image source={StravaImg} style={styles.icon} />
+        <StravaImg width={32} hight={32} />
       </View>
 
       <Text style={styles.title}>{title}</Text>

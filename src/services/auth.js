@@ -8,6 +8,6 @@ export function signIn() {
           cidade: 'Coreaú',
         },
       })
-    }, 2000)
+    }, 500)
   })
 }

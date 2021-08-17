@@ -27,9 +27,6 @@ export const styles = StyleSheet.create({
   },
 
   iconInput: {
-    width: 32,
-    height: 32,
-
     marginRight: 12,
   },
 

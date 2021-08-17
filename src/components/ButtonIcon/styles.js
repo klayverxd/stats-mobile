@@ -27,8 +27,4 @@ export const styles = StyleSheet.create({
     borderRightWidth: 2,
     borderColor: theme.colors.white,
   },
-  icon: {
-    width: 24,
-    height: 18,
-  },
 })

@@ -2,8 +2,8 @@ import React from 'react'
 import { Text, View, Image, StatusBar, ImageBackground } from 'react-native'
 
 import IllustrationImg from '../../assets/illustration.png'
-import StatsImg from '../../assets/stats-white.png'
-import Icons from '../../assets/icons.png'
+import StatsImg from '../../assets/stats-white.svg'
+import Icons from '../../assets/icons.svg'
 
 import { ButtonIcon } from '../../components/ButtonIcon'
 
@@ -23,11 +23,7 @@ export function SignIn() {
           style={styles.imageBackground}
         >
           <View style={styles.textContent}>
-            <Image
-              source={StatsImg}
-              style={styles.statsImg}
-              resizeMode="stretch"
-            />
+            <StatsImg width={140} />
             <Text style={styles.title}>
               Olá, ciclista!{`\n`}
               Bem-vindo ao Stats.
@@ -43,7 +39,7 @@ export function SignIn() {
         </ImageBackground>
         <View style={styles.footer}>
           <ButtonIcon title="Fazer login com o Strava" activeOpacity={0.6} />
-          <Image source={Icons} style={styles.icons} resizeMode="stretch" />
+          <Icons width={'100%'} height={34} />
         </View>
       </View>
     </View>

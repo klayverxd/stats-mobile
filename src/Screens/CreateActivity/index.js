@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import {
-  Image,
   ScrollView,
   Text,
   TextInput,
@@ -12,12 +11,12 @@ import {
 import { Picker } from '@react-native-picker/picker'
 import RadioGroup from 'react-native-radio-buttons-group'
 
-import CiclistIcon from '../../assets/ciclist-icon.png'
-import NoteIcon from '../../assets/note-icon.png'
-import RoadIcon from '../../assets/road-icon.png'
-import ClockIcon from '../../assets/clock-icon.png'
-import ClockHourIcon from '../../assets/clock-hour-icon.png'
-import SneakersIcon from '../../assets/sneakers-icon.png'
+import CiclistIcon from '../../assets/ciclist-icon.svg'
+import NoteIcon from '../../assets/note-icon.svg'
+import RoadIcon from '../../assets/road-icon.svg'
+import ClockIcon from '../../assets/clock-icon.svg'
+import ClockHourIcon from '../../assets/clock-hour-icon.svg'
+import SneakersIcon from '../../assets/sneakers-icon.svg'
 
 import { styles } from './styles'
 
@@ -90,7 +89,7 @@ export function CreateActivity() {
     <ScrollView style={styles.containerCards}>
       <View style={styles.container}>
         <View style={styles.containerInput}>
-          <Image source={CiclistIcon} style={styles.iconInput} />
+          <CiclistIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInput}>
             <Text style={styles.labelInput}>Título da atividade: </Text>
             <TextInput
@@ -103,7 +102,7 @@ export function CreateActivity() {
         </View>
 
         <View style={styles.containerInput}>
-          <Image source={NoteIcon} style={styles.iconInput} />
+          <NoteIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInput}>
             <Text style={styles.labelInput}>Descrição: </Text>
             <TextInput
@@ -118,7 +117,7 @@ export function CreateActivity() {
         </View>
 
         <View style={styles.containerInput}>
-          <Image source={RoadIcon} style={styles.iconInput} />
+          <RoadIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInputRow}>
             <Text style={styles.labelInput}>Distância (km): </Text>
             <TextInput
@@ -132,7 +131,7 @@ export function CreateActivity() {
         </View>
 
         <View style={styles.containerInput}>
-          <Image source={ClockIcon} style={styles.iconInput} />
+          <ClockIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInputRow}>
             <Text style={styles.labelInput}>Duração: </Text>
             <TextInput
@@ -160,7 +159,7 @@ export function CreateActivity() {
         </View>
 
         <View style={styles.containerInput}>
-          <Image source={ClockHourIcon} style={styles.iconInput} />
+          <ClockHourIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInputRow}>
             <Text style={styles.labelInput}>Hora: </Text>
             <TextInput
@@ -188,7 +187,7 @@ export function CreateActivity() {
         </View>
 
         <View style={styles.containerInput}>
-          <Image source={SneakersIcon} style={styles.iconInput} />
+          <SneakersIcon width={32} height={32} style={styles.iconInput} />
           <View style={styles.contentInputRow}>
             <Text style={styles.labelInput}>Tipo: </Text>
             <Picker

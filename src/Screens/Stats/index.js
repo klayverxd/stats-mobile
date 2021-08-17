@@ -2,10 +2,10 @@ import React from 'react'
 
 import { useAuth } from '../../contexts/auth'
 
-import { Image, ScrollView, Text, View } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 
-import Cyclist from '../../assets/cycling.png'
-import Cyclists from '../../assets/cyclists.png'
+import Cyclist from '../../assets/cycling.svg'
+import Cyclists from '../../assets/cyclists.svg'
 
 import { styles } from './styles'
 
@@ -37,7 +37,7 @@ export function Stats() {
         </View>
         <View style={styles.containerCard}>
           <View style={styles.cardSection1}>
-            <Image source={Cyclist} style={styles.iconCard} />
+            <Cyclist width={58} height={58} />
           </View>
           <View style={styles.cardSection2}>
             <Text style={styles.title}>Pedaladas</Text>
@@ -46,7 +46,7 @@ export function Stats() {
         </View>
         <View style={styles.containerCard}>
           <View style={styles.cardSection1}>
-            <Image source={Cyclists} style={styles.iconCard} />
+            <Cyclists width={68} height={63} />
           </View>
           <View style={styles.cardSection2}>
             <Text style={styles.title}>Clubes</Text>

@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
   },
   icons: {
-    width: '100%',
-    height: 33,
+    width: '50%',
+    height: 36,
   },
 })

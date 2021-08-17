@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import { Image, StatusBar } from 'react-native'
+import { StatusBar } from 'react-native'
 
 import { Header } from '../components/Header'
 
@@ -9,9 +9,9 @@ import { Stats } from '../screens/Stats'
 import { CreateActivity } from '../screens/CreateActivity'
 import { Equipment } from '../screens/Equipment'
 
-import BarChart from '../assets/bar-chart.png'
-import Road from '../assets/road.png'
-import Wheel from '../assets/wheel.png'
+import BarChart from '../assets/bar-chart.svg'
+import Road from '../assets/road.svg'
+import Wheel from '../assets/wheel.svg'
 
 import { theme } from '../global/styles/theme'
 
@@ -20,17 +20,17 @@ const Tab = createBottomTabNavigator()
 export default function App() {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar />
       <Header />
       <Tab.Navigator
         initialRouteName="Stats"
         screenOptions={{
           headerShown: false,
           tabBarStyle: {
-            backgroundColor: '#252525',
+            backgroundColor: theme.colors.secondary,
           },
           tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.5)',
-          tabBarActiveTintColor: theme.colors.primary,
+          tabBarActiveTintColor: theme.colors.white,
         }}
       >
         <Tab.Screen
@@ -38,9 +38,7 @@ export default function App() {
           component={Stats}
           options={{
             title: 'Estatísticas',
-            tabBarIcon: () => (
-              <Image source={BarChart} style={{ width: 20, height: 20 }} />
-            ),
+            tabBarIcon: () => <BarChart width={22} height={22} />,
           }}
         />
         <Tab.Screen
@@ -48,9 +46,7 @@ export default function App() {
           component={CreateActivity}
           options={{
             title: 'Criar atividade',
-            tabBarIcon: () => (
-              <Image source={Road} style={{ width: 20, height: 20 }} />
-            ),
+            tabBarIcon: () => <Road width={22} height={22} />,
           }}
         />
         <Tab.Screen
@@ -58,9 +54,7 @@ export default function App() {
           component={Equipment}
           options={{
             title: 'Equipamentos',
-            tabBarIcon: () => (
-              <Image source={Wheel} style={{ width: 20, height: 20 }} />
-            ),
+            tabBarIcon: () => <Wheel width={22} height={22} />,
           }}
         />
       </Tab.Navigator>
